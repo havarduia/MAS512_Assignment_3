@@ -26,6 +26,7 @@ python train_walking.py 2000000 8 --omni                                # train 
 
 | File | What it does |
 |---|---|
+| `q2_lite3_navigation.ipynb` | notebook: explains the environment, observation, reward, interface; runs the 5 tests and shows the results, plots and GIFs. Already executed, outputs saved |
 | `run_tests.py` | runs the 5 tests on the fixed map, saves the results, makes the plots and GIFs |
 | `train_navigation.py` | trains the navigation policy |
 | `train_walking.py` | trains the walking policy |
