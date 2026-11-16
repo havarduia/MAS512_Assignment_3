@@ -7,11 +7,12 @@
 # Install:
 #   python --version  # must report Python 3.10.x
 #   python -m pip install --upgrade pip
-#   python -m pip install -r rl-requirements-ubuntu24.txt
+#   python -m pip install -r requirements_modified.txt
 #   python -m pip check
 # A Jupyter notebook must also use this environment's Python 3.10 kernel.
 #
 # Preserves all 166 non-CUDA packages from the original file.
+# Adds pybullet==3.2.7 for q2 (q1 and q2 share this environment).
 # RL / PyTorch versions stay fixed; scientific / IPython pins support Python 3.10.
 # Other original pins become upper bounds: pip selects compatible older versions
 # using Python-version metadata and dependency constraints across the whole file.
@@ -137,6 +138,7 @@ protobuf<=7.35.1
 psutil<=7.2.2
 ptyprocess<=0.7.0
 pure_eval<=0.2.3
+pybullet==3.2.7
 pycparser<=3.0
 pydantic<=2.13.4
 pydantic_core<=2.46.4

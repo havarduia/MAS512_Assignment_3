@@ -2,9 +2,13 @@
 
 ## Run
 
+Uses the same Python 3.10 venv as q1 (see `../q1/README.md`). From the repository root:
+
 ```bash
-pip install -r requirements.txt
-python run_tests.py
+python3.10 -m venv .venv
+.venv/bin/python -m pip install -r requirements_modified.txt
+cd q2
+../.venv/bin/python run_tests.py
 ```
 
 This runs the 5 tests and writes `results/`, `plots/final/` and `gifs/final/`. It takes about 5–10 minutes.
